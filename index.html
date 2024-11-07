@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación del Clima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Aplicación del Clima</h1>
+        <form id="weatherForm">
+            <input type="text" id="cityInput" placeholder="Ingrese una ciudad" required>
+            <button type="submit">Obtener Clima</button>
+        </form>
+        <div id="weatherResult" class="hidden">
+            <h2 id="cityName"></h2>
+            <p id="temperature"></p>
+            <p id="conditions"></p>
+            <p id="humidity"></p>
+            <img id="weatherIcon" src="" alt="Weather Icon">
+        </div>
+        <div id="errorResult" class="hidden">
+            <p>Ciudad no encontrada o error al obtener el clima.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
